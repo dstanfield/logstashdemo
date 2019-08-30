@@ -1,0 +1,25 @@
+<record reset="true">
+  <package>com.microstrategy.web.objects</package>
+  <level>SEVERE</level>
+  <miliseconds>1546470796572</miliseconds>
+  <timestamp>01/02/2019 18:13:16:574</timestamp>
+  <thread>0</thread>
+  <class>WebIServerSessionImpl</class>
+  <method>initAuthInfo</method>
+  <message>MSIXML : Server &quot;&quot; not connected. (com.microstrategy.web.objects.WebObjectsException)</message>
+  <exception>com.microstrategy.web.objects.WebObjectsException: MSIXML : Server &quot;&quot; not connected.&#x0D;&#x0A;&#x09;at com.microstrategy.web.objects.WebIServerSessionImpl.initAuthInfo(Unknown Source)&#x0D;&#x0A;&#x09;at com.microstrategy.web.objects.WebIServerSessionImpl.createNewSessionID(Unknown Source)&#x0D;&#x0A;&#x09;at com.microstrategy.web.objects.WebSessionInfoImpl.getSessionID(Unknown Source)&#x0D;&#x0A;&#x09;at com.microstrategy.web.objects.ServerDefBypassAclCache.load(Unknown Source)&#x0D;&#x0A;&#x09;at com.microstrategy.utils.cache.CacheBase.get(Unknown Source)&#x0D;&#x0A;&#x09;at com.microstrategy.web.app.beans.GlobalFeaturesImpl.isSessionRecoverySettingEnabled(Unknown Source)&#x0D;&#x0A;&#x09;at com.microstrategy.web.app.beans.GlobalFeaturesImpl.resolveFeature(Unknown Source)&#x0D;&#x0A;&#x09;at com.microstrategy.web.beans.AbstractWebFeatures.isFeatureAvailable(Unknown Source)&#x0D;&#x0A;&#x09;at com.microstrategy.web.beans.AbstractWebComponent.isFeatureAvailable(Unknown Source)&#x0D;&#x0A;&#x09;at com.microstrategy.web.app.taglibs.IfFeatureTagHelper.checkCondition(Unknown Source)&#x0D;&#x0A;</exception>
+</record>
+<record reset="true">
+  <package>com.microstrategy.web.objects</package>
+  <level>SEVERE</level>
+  <miliseconds>1546474942283</miliseconds>
+  <timestamp>01/02/2019 19:22:22:284</timestamp>
+  <thread>0</thread>
+  <class>WebIServerSessionImpl</class>
+  <method>initAuthInfo</method>
+  <message>MSIXML : Server &quot;&quot; not connected. (com.microstrategy.web.objects.WebObjectsException)</message>
+  <exception>com.microstrategy.web.objects.WebObjectsException: MSIXML : Server &quot;&quot; not connected.&#x0D;&#x0A;&#x09;at com.microstrategy.web.objects.WebIServerSessionImpl.initAuthInfo(Unknown Source)&#x0D;&#x0A;&#x09;at com.microstrategy.web.objects.WebIServerSessionImpl.createNewSessionID(Unknown Source)&#x0D;&#x0A;&#x09;at com.microstrategy.web.objects.WebSessionInfoImpl.getSessionID(Unknown Source)&#x0D;&#x0A;&#x09;at com.microstrategy.web.objects.ServerDefBypassAclCache.load(Unknown Source)&#x0D;&#x0A;&#x09;at com.microstrategy.utils.cache.CacheBase.get(Unknown Source)&#x0D;&#x0A;&#x09;at com.microstrategy.web.app.beans.GlobalFeaturesImpl.isSessionRecoverySettingEnabled(Unknown Source)&#x0D;&#x0A;&#x09;at com.microstrategy.web.app.beans.GlobalFeaturesImpl.resolveFeature(Unknown Source)&#x0D;&#x0A;&#x09;at com.microstrategy.web.beans.AbstractWebFeatures.isFeatureAvailable(Unknown Source)&#x0D;&#x0A;&#x09;at com.microstrategy.web.beans.AbstractWebComponent.isFeatureAvailable(Unknown Source)&#x0D;&#x0A;&#x09;at com.microstrategy.web.app.taglibs.IfFeatureTagHelper.checkCondition(Unknown Source)&#x0D;&#x0A;</exception>
+</record>
+
+
+dd/MM/yyyy HH:mm:ss:SSS
