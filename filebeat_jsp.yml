@@ -25,8 +25,7 @@ filebeat.inputs:
 
   # Paths that should be crawled and fetched. Glob based paths.
   paths:
-    - "C:\\Program Files (x86)\\MicroStrategy\\Web ASPx\\WEB-INF\\log\\*.log"
-    - "C:\\Program Files (x86)\\Common Files\\MicroStrategy\\Tomcat\\apache-tomcat-9.0.12\\webapps\\MicroStrategy\\WEB-INF\\log\\*.log"
+    - "/opt/Tomcat/apache-tomcat-9.0.12/webapps/MicroStrategy/WEB-INF/log/*.log"
     
     #- c:\programdata\elasticsearch\logs\*
 
@@ -189,7 +188,7 @@ processors:
 logging:
   to_files: true
   files:
-    path: "C:\\Program Files\\Filebeat\\Logs"
+    path: "/opt/filebeat/logs"
   level: info
   selectors: ["*"]
 
