@@ -11,7 +11,7 @@
 #   pipeline.batch.size: 1
 #   config.string: "input { generator {} } filter { sleep { time => 1 } } output { stdout { codec => dots } }"
 # - pipeline.id: another_test
-#   queue.type: persistedd
+#   queue.type: persisted
 #   path.config: "/tmp/logstash/*.config"
 - pipeline.id: mstrlogs
   path.config: "/etc/logstash/conf.d/logstashmstrlog_mk_1.conf"
