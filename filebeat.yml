@@ -55,7 +55,7 @@ filebeat.inputs:
   # for Java Stack Traces or C-Line Continuation
 
   # The regexp Pattern that has to be matched. The example pattern matches all lines starting with [
-  multiline.pattern: '^\<record'
+  multiline.pattern: '^<record'
   multiline.negate: true
   multiline.match: after
 
@@ -152,6 +152,7 @@ setup.template.settings:
 #-------------------------- Elasticsearch output ------------------------------
 output.logstash:
   hosts: ["10.23.7.26:5044"]
+
 
   # Optional protocol and basic auth credentials.
   #protocol: "https"
