@@ -1,5 +1,6 @@
-ids = event["id"].split(",")
-      values = event["value"].split(",")
-      if ids.length == values.length
-        ids.each_index { |i| event["id#{ids[i]}"] = values[i] }
-      end
+ids = ["fuck","shit","ass"]
+ids.each_with_index do |value, index|           
+  puts value
+  puts index
+  event["parameter_%{index}"] = "value"
+end
