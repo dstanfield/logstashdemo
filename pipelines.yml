@@ -17,6 +17,8 @@
   path.config: "/etc/logstash/conf.d/logstashmstrlog_mk_1.conf"
 - pipeline.id: xmlapilocal
   path.config: "/etc/logstash/conf.d/logstashxmlapi_mk_1.conf"
+  - pipeline.id: kernelxmllocal
+  path.config: "/etc/logstash/conf.d/kernelxml.conf"
 #
 # Available options:
 #
