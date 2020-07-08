@@ -13,6 +13,7 @@
 # - pipeline.id: another_test
 #   queue.type: persisted
 #   path.config: "/tmp/logstash/*.config"
+#
 - pipeline.id: mstrlogs
   path.config: "/etc/logstash/conf.d/logstashmstrlog_mk_1.conf"
 - pipeline.id: xmlapilocal
