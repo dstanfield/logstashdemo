@@ -1,8 +1,8 @@
 ###################### Filebeat Configuration Example #########################
 
 # This file is an example configuration file highlighting only the most common
-# options. The filebeat.reference.yml file from the same directory contains all the
-# supported options with more comments. You can use it as a reference.
+# options. The filebeat.reference.yml filfdasfdsae from the same directory contains all the
+# supported options with more comsments. You can use it as a reference.
 #
 # You can find the full configuration reference here:
 # https://www.elastic.co/guide/en/beats/filebeat/index.html
@@ -25,8 +25,7 @@ filebeat.inputs:
 
   # Paths that should be crawled and fetched. Glob based paths.
   paths:
-    - "C:\\Program Files (x86)\\MicroStrategy\\Web ASPx\\WEB-INF\\log\\*.log"
-    - "C:\\Program Files (x86)\\Common Files\\MicroStrategy\\Tomcat\\apache-tomcat-9.0.12\\webapps\\MicroStrategy\\WEB-INF\\log\\*.log"
+    - "/opt/Tomcat/apache-tomcat-9.0.12/webapps/MicroStrategy/WEB-INF/log/*.log"
     
     #- c:\programdata\elasticsearch\logs\*
 
@@ -55,7 +54,7 @@ filebeat.inputs:
   # for Java Stack Traces or C-Line Continuation
 
   # The regexp Pattern that has to be matched. The example pattern matches all lines starting with [
-  multiline.pattern: '^<record'
+  multiline.pattern: '^\<record'
   multiline.negate: true
   multiline.match: after
 
@@ -150,8 +149,8 @@ setup.template.settings:
 # Configure what output to use when sending the data collected by the beat.
 
 #-------------------------- Elasticsearch output ------------------------------
-
-
+output.logstash:
+  hosts: ["10.23.7.26:5044"]
 
   # Optional protocol and basic auth credentials.
   #protocol: "https"
@@ -162,9 +161,6 @@ setup.template.settings:
 #output.logstash:
   # The Logstash hosts
   #hosts: ["localhost:5044"]
-
-  output.logstash:
-  hosts: ["10.23.7.26:5044"]
 
   # Optional SSL. By default is off.
   # List of root certificates for HTTPS server verifications
@@ -192,7 +188,7 @@ processors:
 logging:
   to_files: true
   files:
-    path: "C:\\Program Files\\Filebeat\\Logs"
+    path: "/opt/filebeat/logs"
   level: info
   selectors: ["*"]
 

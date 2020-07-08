@@ -1,0 +1,11 @@
+git config --global user.email "dstanfieldva@gmail.com"  
+
+git checkout origin/master — path/to/file;
+
+curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/dstanfield/logstashdemo/master/logstashmstrlog_mk_1.conf -o logstashmstrlog_mk_1.conf 
+
+curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/dstanfield/logstashdemo/master/pipelines.yml -o pipelines.yml
+
+curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/dstanfield/logstashdemo/master/kernelxml.conf -o kernelxml.conf
+
+
